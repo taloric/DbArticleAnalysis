@@ -19,10 +19,11 @@ if __name__ == '__main__':
     FontsDir = config.get(configKey, 'FontsDir')
 
     '''爬取日志'''
-    # dataCapture = Capture(RemoteUrl)
-    # driver = dataCapture.Login(UserName, Password)
-    # dataCapture.RequestAndSave(driver)
+    dataCapture = Capture(RemoteUrl)
+    driver = dataCapture.Login(UserName, Password)
+    dataCapture.RequestAndSave(driver)
 
     '''分词器生成分词结果'''
     textanalyzer = TextAnalyzer(FontsDir)
+    textanalyzer.MainAnalyzer()
     textanalyzer.AllAnalyzer()
