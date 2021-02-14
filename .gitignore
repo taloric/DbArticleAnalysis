@@ -5,6 +5,7 @@ __pycache__/
 
 #datas
 dataSource
+dataResult
 
 #vscode
 *.code-workspace
