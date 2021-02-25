@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 class Capture(object):
     '''爬虫类，抓取豆瓣指定网站一整页的文章列表'''
     '''后面爬的时候要注意自己chrome的版本和chromeDriver的版本'''
-    '''todo 第一次爬全部，后面每年只爬增量数据(from 2021) 程序留给 2022 年再修改 ( by vivi at 2021/2/14'''
+    '''todo 第一次爬全部，后面每年只爬增量数据(from 2021) 程序留给 2022 年再修改 ( at 2021/2/14'''
 
     def __init__(self, url):
         self.Url = url
